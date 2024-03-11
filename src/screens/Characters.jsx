@@ -16,7 +16,7 @@ function Characters() {
 
   return (
     <div>
-      <h1 className="all-characters">All the characters!</h1>
+      <h1 className="all-characters">CHARACTERS</h1>
       <div className="characters-container">
         {characters.map((character) => (
           <Character character={character} key={character._id} />

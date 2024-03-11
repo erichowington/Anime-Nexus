@@ -25,7 +25,12 @@ function CharacterDetail() {
   return (
     <div>
       <h1>{character.name}</h1>
-      <img src={character.images} />
+     
+      {character.images && <img src={
+        typeof character.images == "string" ? 
+        character.images: character.images[0]
+      } /> }
+      <p>JUTSU</p>
         {character?.jutsu?.length > 0 && character.jutsu.map((jut) => (
           <p>{jut}</p>
         ))}
