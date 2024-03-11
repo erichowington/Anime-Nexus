@@ -13,8 +13,12 @@
     text-align: center;
     align-items: center;
     border: 2px solid black;
+    border-radius: 20px;
+    padding-bottom: 10px;
     width:25%;
     margin-top: 50px;
+    color: white;
+    background-color: RGB(0,0,0,0.2);
 }
 
 img{

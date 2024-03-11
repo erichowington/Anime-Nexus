@@ -1,6 +1,11 @@
+html{
+  background-color: rgb(59, 55, 63);
+}
+
 .App{
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 .nav{

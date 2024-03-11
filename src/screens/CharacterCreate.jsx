@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createCharacter } from "../services/characters.js";
+import "./CharacterCreate.css";
 
 function CharacterCreate() {
   const [character, setCharacter] = useState({
@@ -43,56 +44,60 @@ function CharacterCreate() {
   };
 
   return (
-    <div>
-      <h1>Add your favorite character!</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="add characters name"
-          name="name"
-          value={character.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          placeholder="add image url"
-          name="images"
-          value={character.images}
-          onChange={handleChange}
-        />
-        {/* <input
-          type="text"
-          placholder="Jutsu"
-          name="jutsu"
-          value={character.jutsu}
-          onChange={handleChange}
-        /> */}
-        <div>
-          Personal
-          <input
-            type="text"
-            placeholder="Birthdate"
-            name="birthdate"
-            value={character.personal.birthdate}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Sex"
-            name="sex"
-            value={character.personal.sex}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            placeholder="Status"
-            name="status"
-            value={character.personal.status}
-            onChange={handleChange}
-          />
-        </div>
-        <button type="submit">Create your character!</button>
-      </form>
+    <div className="form-wrapper">
+        <h1>Add your favorite character!</h1>
+        <div className="form-content">
+          <form onSubmit={handleSubmit}>
+            <p>Name</p>
+            <input
+              type="text"
+              placeholder="add characters name"
+              name="name"
+              value={character.name}
+              onChange={handleChange}
+              
+            />
+            <p>Photo</p>
+            <input
+              type="text"
+              placeholder="add image url"
+              name="images"
+              value={character.images}
+              onChange={handleChange}
+            />
+            <p>Jutsu</p>
+            <input
+              type="text"
+              placholder="Jutsu"
+              name="jutsu"
+              value={character.jutsu}
+              onChange={handleChange}
+            />
+            <p>Personal</p>
+              <input
+                type="text"
+                placeholder="Birthdate"
+                name="birthdate"
+                value={character.personal.birthdate}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                placeholder="Sex"
+                name="sex"
+                value={character.personal.sex}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                placeholder="Status"
+                name="status"
+                value={character.personal.status}
+                onChange={handleChange}
+              />
+          <button type="submit">Create your character!</button>
+        </form>
+      </div>
     </div>
   );
 }
