@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import style from "./CharacterComponent.css"
+import "./CharacterComponent.css"
 
 function Character({ character }) {
   return (
     <div>
-      <div>
+      <div className="image-container">
         <Link to={`/characters/${character._id}`}>
           <img className="icon" src={typeof character.images == "string" ? 
           character.images: character.images[0]} 

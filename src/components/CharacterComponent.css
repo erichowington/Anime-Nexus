@@ -1,0 +1,16 @@
+.image-container {
+    width: 10rem;
+    height: 10rem;
+    padding: 1vw 1vw;
+    backdrop-filter: invert(100%); 
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* the img inside the preview div, map to the container */
+.icon {
+    width: 100%;
+    height:  100%;
+    object-fit: scale-down;
+}
