@@ -7,6 +7,7 @@ function Characters() {
 
   async function fetchCharacters() {
     const allCharacters = await getCharacters();
+    allCharacters.length = 9
     setCharacters(allCharacters);
   }
 
@@ -19,7 +20,7 @@ function Characters() {
       <h1 className="all-characters">All the characters!</h1>
       <div className="characters-container">
         {characters.map((character) => (
-          <Character character={character} />
+          <Character character={character} key={character._id} />
         ))}
       </div>
     </div>
