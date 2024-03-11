@@ -1,0 +1,10 @@
+.content-wrapper{
+    border: 5px solid black;
+    margin: 2em auto;
+    border-radius: 20px;
+}
+.home{
+    font-family: "Bangers";
+    font-size: 7em;
+    padding: 2em;
+}

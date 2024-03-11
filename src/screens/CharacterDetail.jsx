@@ -26,7 +26,7 @@ function CharacterDetail() {
   return (
     <div className="character-details">
       <div className="content">
-        <h1>{character.name}</h1>
+        <h1 className="character-name">{character.name}</h1>
 
         {character.images && (
           <img
@@ -37,17 +37,19 @@ function CharacterDetail() {
             }
           />
         )}
-        <p>JUTSU</p>
-        {character?.jutsu?.length > 0 &&
+        <p className="character-jutsu">JUTSU</p>
+        <div className="jutsu-items">
+          {character?.jutsu?.length > 0 &&
           character.jutsu.map((jut) => <p>{jut}</p>)}
-        {/* <p>{character.personal.birthdate}</p>
-        <p>{character.personal.sex}</p>
-        <p>{character.personal.status}</p> */}
+          {/* <p>{character.personal.birthdate}</p>
+          <p>{character.personal.sex}</p>
+          <p>{character.personal.status}</p> */}
+        </div>
         <div>
           <Link to={`/characters/${id}/edit`}>
-            <button>EDIT</button>
+            <button className="edit">EDIT</button>
           </Link>
-          <button onClick={handleDelete}>DELETE</button>
+          <button className="delete" onClick={handleDelete}>DELETE</button>
         </div>
       </div>
     </div>

@@ -1,3 +1,13 @@
+.character-name{
+    font-family: "Bangers";
+    font-size: 2em;
+}
+.character-jutsu{
+    font-family: "Bangers";
+    font-size: x-large;
+    padding: auto;
+    margin: 5px auto;
+}
 .character-details{
     display:flex;
     align-content: center;
@@ -14,16 +24,54 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 20px;
-    padding-bottom: 10px;
+    padding: 10px;
     max-width:100%;
     margin: 50px auto;
     color: white;
     background-color: RGB(0,0,0,0.2);
     overflow: auto;
+    font-family: Arial;
+}
+.jutsu-items{
+    color:greenyellow;
+    font-weight: 800;
+    border:2px solid black;
+    border-radius: 20px;
+    background-color: RGB(0,0,0,0.2);
+    padding: 3px;
+    margin:2px auto;
 }
 
 img{
     align-self:center;
     justify-self:center;
+}
+
+
+.edit{
+    padding: 10px;
+    margin:10px;
+    color:black;
+    background-color: RGB(0,0,0,0.2);
+    border: 1px solid black;
+    font-weight: 800;
+
+}
+.edit:hover{
+    background-color: green;
+    cursor:grabbing;
+}
+.delete{
+    padding:10px;
+    margin:10px;
+    color:black;
+    background-color: RGB(0,0,0,0.2);
+    border:1px solid black;
+    font-weight: 800;
+
+}
+.delete:hover{
+    background-color: red;
+    cursor: grabbing;
 }
 

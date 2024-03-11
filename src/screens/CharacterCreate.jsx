@@ -48,7 +48,7 @@ function CharacterCreate() {
         <h1>Add your favorite character!</h1>
         <div className="form-content">
           <form onSubmit={handleSubmit}>
-            <p>Name</p>
+            <p className="form-name">Name</p>
             <input
               type="text"
               placeholder="add characters name"
@@ -57,7 +57,7 @@ function CharacterCreate() {
               onChange={handleChange}
               
             />
-            <p>Photo</p>
+            <p className="form-photo">Photo</p>
             <input
               type="text"
               placeholder="add image url"
@@ -65,7 +65,7 @@ function CharacterCreate() {
               value={character.images}
               onChange={handleChange}
             />
-            <p>Jutsu</p>
+            <p className="form-jutsu">Jutsu</p>
             <input
               type="text"
               placholder="Jutsu"
@@ -73,7 +73,7 @@ function CharacterCreate() {
               value={character.jutsu}
               onChange={handleChange}
             />
-            <p>Personal</p>
+            <p className="form-personal">Personal</p>
               <input
                 type="text"
                 placeholder="Birthdate"
@@ -95,7 +95,7 @@ function CharacterCreate() {
                 value={character.personal.status}
                 onChange={handleChange}
               />
-          <button type="submit">Create your character!</button>
+          <button className="form-button" type="submit">Create your character!</button>
         </form>
       </div>
     </div>

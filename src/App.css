@@ -12,12 +12,15 @@ html{
   display:flex;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   padding:15px;
   background-color: rgb(33, 33, 33);
   color: white;
   text-decoration: none;
   font-weight: 600;
+  border-radius: 20px;
+  font-family: "Bangers";
+  font-size: 1.5em;
 
 }
 
