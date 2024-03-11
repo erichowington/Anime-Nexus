@@ -15,10 +15,11 @@
     border: 2px solid black;
     border-radius: 20px;
     padding-bottom: 10px;
-    width:25%;
-    margin-top: 50px;
+    max-width:100%;
+    margin: 50px auto;
     color: white;
     background-color: RGB(0,0,0,0.2);
+    overflow: auto;
 }
 
 img{
