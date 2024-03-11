@@ -7,7 +7,6 @@ function Characters() {
 
   async function fetchCharacters() {
     const allCharacters = await getCharacters();
-    allCharacters.length = 9
     setCharacters(allCharacters);
   }
 

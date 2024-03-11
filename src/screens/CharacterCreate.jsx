@@ -6,7 +6,7 @@ function CharacterCreate() {
   const [character, setCharacter] = useState({
     name: "",
     images: "",
-    jutsu: "",
+    jutsu: ["Cool Jutsu", "Other cool Jutsu"],
     personal: {
       birthdate: "",
       sex: "",
@@ -26,55 +26,66 @@ function CharacterCreate() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setCharacter((prevCharacter) => ({
-      ...prevCharacter,
-      [name]: value,
-    }));
+    if (name === "name" || name === "images") {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        [name]: value,
+      }));
+    } else {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        personal: {
+          ...prevCharacter.personal,
+          [name]: value
+        },
+      }));
+    }
   };
+
   return (
     <div>
       <h1>Add A Character to our Database!</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placholder="add characters name"
+          placeholder="add characters name"
           name="name"
           value={character.name}
           onChange={handleChange}
         />
         <input
           type="text"
-          placholder="add image url"
-          name="image"
+          placeholder="add image url"
+          name="images"
           value={character.images}
           onChange={handleChange}
         />
-        <input
+        {/* <input
           type="text"
           placholder="Jutsu"
           name="jutsu"
           value={character.jutsu}
           onChange={handleChange}
-        />
+        /> */}
         <div>
           Personal
           <input
             type="text"
-            placholder="Birthdate"
+            placeholder="Birthdate"
             name="birthdate"
             value={character.personal.birthdate}
             onChange={handleChange}
           />
           <input
             type="text"
-            placholder="Sex"
+            placeholder="Sex"
             name="sex"
             value={character.personal.sex}
             onChange={handleChange}
           />
           <input
             type="text"
-            placholder="Status"
+            placeholder="Status"
             name="status"
             value={character.personal.status}
             onChange={handleChange}

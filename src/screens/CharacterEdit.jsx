@@ -6,13 +6,14 @@ function CharacterEdit() {
   const [character, setCharacter] = useState({
     name: "",
     images: "",
-    jutsu: "",
+    jutsu: [],
     personal: {
       birthdate: "",
       sex: "",
       status: "",
     },
   });
+
   let { id } = useParams();
   let navigate = useNavigate();
 
@@ -28,17 +29,27 @@ function CharacterEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await editCharacter(character);
+    await editCharacter(id, character);
     navigate(`/characters/${id}`);
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    setCharacter((prevCharacter) => ({
-      ...prevCharacter,
-      [name]: value,
-    }));
+    if (name === "name" || name === "images") {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        [name]: value,
+      }));
+    } else {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        personal: {
+          ...prevCharacter.personal,
+          [name]: value
+        },
+      }));
+    }
   };
 
   return (
@@ -59,13 +70,13 @@ function CharacterEdit() {
           value={character.images}
           onChange={handleChange}
         />
-        <input
+        {/* <input
           type="text"
           placholder="Jutsu"
           name="jutsu"
           value={character.jutsu}
           onChange={handleChange}
-        />
+        /> */}
         <div>
           Personal
           <input
@@ -90,7 +101,7 @@ function CharacterEdit() {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Create your character!</button>
+        <button type="submit">Edit your character!</button>
       </form>
     </div>
   );
