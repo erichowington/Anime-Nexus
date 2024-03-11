@@ -44,7 +44,7 @@ function CharacterCreate() {
 
   return (
     <div>
-      <h1>Add A Character to our Database!</h1>
+      <h1>Add your favorite character!</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

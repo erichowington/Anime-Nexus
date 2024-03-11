@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getCharacters } from "../services/characters.js";
 import Character from "../components/Character.jsx";
+import "./Characters.css"
 
 function Characters() {
   const [characters, setCharacters] = useState([]);
