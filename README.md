@@ -1,5 +1,7 @@
 # Anime Nexus
 
+>![alt text](https://github.com/erichowington/naruto-react/blob/main/public/images/NEXUS-TITLE.png?raw=true)
+
 Anime Nexus is an interactive archive of your favorite anime characters! Browse our database and checkout characters and their Jutsu. If you don't see your favorite character, add them!
 
 ## Wire Frame
