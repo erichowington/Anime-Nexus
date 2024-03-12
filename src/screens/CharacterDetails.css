@@ -1,14 +1,15 @@
-.character-name{
+.characterName{
     font-family: "Bangers";
     font-size: 2em;
     color:white;
-    text-shadow:rgb(255, 21, 21) 1px 0 10px;
+    text-shadow:2px 10px 10px rgb(0, 0, 0) ;
 }
 .character-jutsu{
     font-family: "Bangers";
     font-size: x-large;
     padding: 10px;
     margin: 5px auto;
+    text-shadow: 2px 10px 10px rgb(0,0,0);
 }
 .character-details{
     display:flex;
@@ -16,7 +17,7 @@
     justify-content: center;
 }
 
-.content{
+.detailContent{
     display:grid;
     justify-self: center;
     align-self: center;
@@ -24,7 +25,6 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    border: 2px solid black;
     border-radius: 20px;
     padding: 10px;
     max-width:100%;
@@ -33,13 +33,13 @@
     background-color: RGB(0,0,0,0.2);
     overflow: auto;
     font-family: Arial;
-    box-shadow:5px 5px 5px rgb(158, 158, 158);
+    box-shadow:5px 5px 5px rgb(255, 255, 255);
+    text-shadow:2px 10px 10px rgb(0, 0, 0) ;
 }
-.jutsu-items{
+.jutsuItems{
     color:rgb(255, 255, 255);
     font-family: arial;
     font-weight: 800;
-    border:2px solid black;
     border-radius: 20px;
     background-color: RGB(0,0,0,0.4);
     padding: 10px;
@@ -57,25 +57,27 @@ img{
     margin:10px;
     color:black;
     background-color: RGB(0,0,0,0.2);
-    border: 1px solid black;
     font-weight: 800;
 
 }
 .edit:hover{
     background-color: rgba(2, 255, 2, 0.5);
     cursor:grabbing;
+    box-shadow: 2px 2px 10px rgba(2, 255, 2, 0.5);
+    color:white;
 }
 .delete{
     padding:10px;
     margin:10px;
     color:black;
     background-color: RGB(0,0,0,0.2);
-    border:1px solid black;
     font-weight: 800;
 
 }
 .delete:hover{
     background-color: red;
+    color:white;
     cursor: grabbing;
+    box-shadow: 2px 2px 10px red;
 }
 

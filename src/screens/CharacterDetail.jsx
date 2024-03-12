@@ -25,8 +25,8 @@ function CharacterDetail() {
 
   return (
     <div className="character-details">
-      <div className="content">
-        <h1 className="character-name">{character.name}</h1>
+      <div className="detailContent">
+        <h1 className="characterName">{character.name}</h1>
 
         {character.images && (
           <img
@@ -38,7 +38,7 @@ function CharacterDetail() {
           />
         )}
         <p className="character-jutsu">JUTSU</p>
-        <div className="jutsu-items">
+        <div className="jutsuItems">
           {character?.jutsu?.length > 0 &&
           character.jutsu.map((jut) => <p>{jut}</p>)}
           {/* <p>{character.personal.birthdate}</p>

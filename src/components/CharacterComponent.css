@@ -10,7 +10,7 @@
     
 }
 .image-container:hover{
-    box-shadow:5px 5px 5px rgb(158, 158, 158); 
+    box-shadow:5px 5px 5px rgb(255, 255, 255); 
 }
 
 /* the img inside the preview div, map to the container */

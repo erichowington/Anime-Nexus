@@ -62,7 +62,7 @@ function CharacterEdit() {
     <div className="form-wrapper">
       <img className="title-img" src="/images/NEXUS-TITLE.png"/>
       <h1 className="edit-header">Character Editor</h1>
-      <div className="form-content">
+      <div className="edit-form-content">
         <form onSubmit={handleSubmit}>
           <p className="form-name">Name</p>
           <input
@@ -80,7 +80,7 @@ function CharacterEdit() {
             value={character.images}
             onChange={handleChange}
           />
-          <p className="jutsu">Jutsu</p>
+          <p className="form-jutsu">Jutsu</p>
           <input
             type="text"
             placholder="Jutsu"
