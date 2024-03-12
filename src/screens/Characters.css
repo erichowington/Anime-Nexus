@@ -21,5 +21,8 @@
     margin-inline-end: 3em;
     align-items: center;
     justify-content: center;
-    padding:5px;
+    padding:10px;
+  }
+  .title-img{
+    max-width: 200px;
   }

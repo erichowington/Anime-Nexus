@@ -7,7 +7,7 @@ function CharacterCreate() {
   const [character, setCharacter] = useState({
     name: "",
     images: "",
-    jutsu: ["Cool Jutsu", "Other cool Jutsu"],
+    jutsu: "",
     personal: {
       birthdate: "",
       sex: "",
@@ -45,7 +45,7 @@ function CharacterCreate() {
 
   return (
     <div className="form-wrapper">
-        <h1>Add your favorite character!</h1>
+        <h1 className="create-header">Add your favorite character!</h1>
         <div className="form-content">
           <form onSubmit={handleSubmit}>
             <p className="form-name">Name</p>

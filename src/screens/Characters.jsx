@@ -23,6 +23,7 @@ function Characters() {
           <Character character={character} key={character._id} />
         ))}
       </div>
+      <img className="title-img" src="../images/NEXUS-TITLE.png"/>
     </div>
   );
 }
