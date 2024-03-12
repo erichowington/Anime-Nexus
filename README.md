@@ -25,3 +25,8 @@ Anime Nexus is an interactive archive of your favorite anime characters! Browse 
 **Database:** MongoDB
 
 **Languages:** JavaScript, HTML, CSS
+
+## Backend
+
+**API: Created by Booker Ngoon**
+- Using Node, MongoDB, Mongoose, and JavaScript.
