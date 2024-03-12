@@ -7,7 +7,7 @@ function CharacterCreate() {
   const [character, setCharacter] = useState({
     name: "",
     images: "",
-    jutsu: "",
+    jutsu: [""],
     personal: {
       birthdate: "",
       sex: "",
@@ -32,6 +32,11 @@ function CharacterCreate() {
         ...prevCharacter,
         [name]: value,
       }));
+    } else if (name === "jutsu") {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        [name]: [value],
+      }));
     } else {
       setCharacter((prevCharacter) => ({
         ...prevCharacter,
@@ -45,6 +50,7 @@ function CharacterCreate() {
 
   return (
     <div className="form-wrapper">
+      <img className="create-title-img" src="/images/NEXUS-TITLE.png"/>
         <h1 className="create-header">Add your favorite character!</h1>
         <div className="form-content">
           <form onSubmit={handleSubmit}>
@@ -70,7 +76,7 @@ function CharacterCreate() {
               type="text"
               placholder="Jutsu"
               name="jutsu"
-              value={character.jutsu}
+              value={character.jutsu[0]}
               onChange={handleChange}
             />
             <p className="form-personal">Personal</p>

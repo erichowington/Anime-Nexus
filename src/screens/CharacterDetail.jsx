@@ -51,6 +51,7 @@ function CharacterDetail() {
           </Link>
           <button className="delete" onClick={handleDelete}>DELETE</button>
         </div>
+        <img className="title-img" src="/images/NEXUS-TITLE.png"/>
       </div>
     </div>
   );

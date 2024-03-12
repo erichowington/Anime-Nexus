@@ -1,5 +1,5 @@
 html{
-  background-color: rgb(59, 55, 63);
+  background-color: rgb(255, 0, 0, 0.7);
 }
 
 .App{
@@ -14,7 +14,7 @@ html{
   justify-content: center;
   align-items:center;
   padding:15px;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(33, 33, 33, 0.3);
   color: white;
   text-decoration: none;
   font-weight: 600;

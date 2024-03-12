@@ -7,7 +7,7 @@ function CharacterEdit() {
   const [character, setCharacter] = useState({
     name: "",
     images: "",
-    jutsu: [],
+    jutsu: [""],
     personal: {
       birthdate: "",
       sex: "",
@@ -42,6 +42,11 @@ function CharacterEdit() {
         ...prevCharacter,
         [name]: value,
       }));
+    } else if (name === "jutsu") {
+      setCharacter((prevCharacter) => ({
+        ...prevCharacter,
+        [name]: [value],
+      }));
     } else {
       setCharacter((prevCharacter) => ({
         ...prevCharacter,
@@ -55,6 +60,7 @@ function CharacterEdit() {
 
   return (
     <div className="form-wrapper">
+      <img className="title-img" src="/images/NEXUS-TITLE.png"/>
       <h1 className="edit-header">Character Editor</h1>
       <div className="form-content">
         <form onSubmit={handleSubmit}>
@@ -79,7 +85,7 @@ function CharacterEdit() {
             type="text"
             placholder="Jutsu"
             name="jutsu"
-            value={character.jutsu}
+            value={character.jutsu[0]}
             onChange={handleChange}
           />
           <p className="form-personal">Personal</p>
@@ -87,21 +93,21 @@ function CharacterEdit() {
               type="text"
               placholder="Birthdate"
               name="birthdate"
-              value={character.personal.birthdate}
+              value={character?.personal?.birthdate}
               onChange={handleChange}
             />
             <input
               type="text"
               placholder="Sex"
               name="sex"
-              value={character.personal.sex}
+              value={character?.personal?.sex}
               onChange={handleChange}
             />
             <input
               type="text"
               placholder="Status"
               name="status"
-              value={character.personal.status}
+              value={character?.personal?.status}
               onChange={handleChange}
             />
           

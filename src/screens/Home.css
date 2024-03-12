@@ -1,12 +1,11 @@
-.content-wrapper{
-    padding:20em;
-    max-width:fit-content;
-    margin: 5% auto;
-    border-radius: 20px;
-    background-image: url("../images/NEXUS-HOME.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.HomeLogo{
+    max-width:50%;
+    align-self: center;
+    margin: 2px auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
     
 }
 .home-main{

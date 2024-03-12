@@ -9,7 +9,8 @@
     text-align: center;
     padding: 10px;
     font-size: 3em;
-    color:white;
+    color:rgb(255, 0, 0);
+    text-shadow: 1px 2px 2px white;
 }
 .characters-container{
     display: flex;
@@ -25,4 +26,5 @@
   }
   .title-img{
     max-width: 200px;
+    padding: 2em;
   }
