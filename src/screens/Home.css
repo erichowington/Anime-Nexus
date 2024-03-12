@@ -1,10 +1,17 @@
 .content-wrapper{
-    border: 5px solid black;
-    margin: 2em auto;
+    padding:20em;
+    max-width:fit-content;
+    margin: 5% auto;
     border-radius: 20px;
+    background-image: url("../images/NEXUS-HOME.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
-.home{
-    font-family: "Bangers";
-    font-size: 7em;
-    padding: 2em;
+.home-main{
+    border:10px solid black;
+    border-radius: 20px;
+    margin: 2em auto;
+    background-color: RGB(88, 96, 75, .2);
 }

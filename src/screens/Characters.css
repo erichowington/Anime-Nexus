@@ -8,6 +8,8 @@
 .title{
     text-align: center;
     padding: 10px;
+    font-size: 3em;
+    color:white;
 }
 .characters-container{
     display: flex;

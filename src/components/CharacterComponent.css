@@ -9,6 +9,9 @@
     border-radius: 20px;
     
 }
+.image-container:hover{
+    box-shadow:5px 5px 5px red; 
+}
 
 /* the img inside the preview div, map to the container */
 .icon {

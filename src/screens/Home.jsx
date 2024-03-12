@@ -1,14 +1,15 @@
-import React from 'react'
-import "./Home.css"
+import React from "react";
+import "./Home.css";
+import image from "../images/NEXUS-HOME.png"
 
 function Home() {
   return (
-        <div>
-          <div className='content-wrapper'>
-            <h1 className='home'>Welcome to Anime Nexus </h1>
-            </div>
-        </div>
-  )
+    <div className="home-main">
+      <div className="content-wrapper">
+        
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

@@ -23,6 +23,9 @@ html{
   font-size: 1.5em;
 
 }
+a.nav:hover{
+  text-shadow:rgb(255, 21, 21) 1px 0 10px;
+}
 
 .home{
   align-items: center;
