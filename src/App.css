@@ -22,6 +22,7 @@ html{
   border-radius: 20px;
   font-family: "Bangers";
   font-size: 1.5em;
+  overflow: auto;
 
 }
 a.nav:hover{
