@@ -7,7 +7,7 @@ Anime Nexus is an interactive archive of your favorite anime characters! Browse 
 ## Wire Frame
 >![alt text](https://raw.githubusercontent.com/erichowington/naruto-react/7b8fc2af5068098b2c596a2452783dbde0f0cb8b/public/images/NEXUS-WIREFRAME.png)
 
-## Full CRUD functionality
+## Features
 >![alt text](https://raw.githubusercontent.com/erichowington/naruto-react/7b8fc2af5068098b2c596a2452783dbde0f0cb8b/public/images/ANIME-NEXUS-CRUD.png)
 
 ```bash
@@ -29,4 +29,4 @@ Anime Nexus is an interactive archive of your favorite anime characters! Browse 
 ## Backend
 
 **API: Created by Booker Ngoon**
-- Using Node, MongoDB, Mongoose, and JavaScript.
+- Using Node, MongoDB, Mongoose, Express and JavaScript.
