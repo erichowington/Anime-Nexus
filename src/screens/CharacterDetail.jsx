@@ -29,7 +29,7 @@ function CharacterDetail() {
         <h1 className="characterName">{character.name}</h1>
 
         {character.images && (
-          <img
+          <img className="detail-image"
             src={
               typeof character.images == "string"
                 ? character.images

@@ -16,6 +16,12 @@
     align-content: center;
     justify-content: center;
 }
+.detail-image{
+    width: 84%;
+    height:  84%;
+    object-fit:contain;
+    border-radius: 5px;
+}
 
 .detailContent{
     display:grid;
