@@ -86,4 +86,16 @@ img{
     cursor: grabbing;
     box-shadow: 2px 2px 10px red;
 }
+.back{
+    text-decoration: none;
+    font-family: "Bangers";
+    font-size: 2em;
+    align-self: flex-end;
+    margin-left: 75%;
+    color:rgb(255, 255, 255);
+    
+}
+.back:hover{
+    text-shadow: 3px 3px 3px rgb(255, 208, 105);
+}
 

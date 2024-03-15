@@ -23,6 +23,7 @@ html{
   font-family: "Bangers";
   font-size: 1.5em;
   overflow: auto;
+  height:10vh;
 
 }
 a.nav:hover{

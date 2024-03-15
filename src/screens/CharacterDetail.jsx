@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getCharacter, deleteCharacter } from "../services/characters.js";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate, NavLink } from "react-router-dom";
 import "./CharacterDetails.css";
 
 function CharacterDetail() {
@@ -52,6 +52,7 @@ function CharacterDetail() {
           <button className="delete" onClick={handleDelete}>DELETE</button>
         </div>
         <img className="title-img" src="/images/NEXUS-TITLE.png"/>
+        <NavLink className="back"to="/characters">Back</NavLink>
       </div>
     </div>
   );
