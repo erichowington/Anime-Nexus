@@ -20,8 +20,7 @@ function CharacterCreate() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await createCharacter(character);
-    navigate("/characters");
+    
   };
 
   const handleChange = (e) => {

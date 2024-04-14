@@ -29,4 +29,7 @@ Anime Nexus is an interactive archive of your favorite anime characters! Browse 
 ## Backend
 
 **API: Created by Booker Ngoon**
-- Using Node, MongoDB, Mongoose, Express and JavaScript.
+- Using Node, MongoDB, Mongoose, Express and JavaScript
+- 
+- 
+- <img src="https://raw.githubusercontent.com/erichowington/hobbyr/2612f880161a230048148715e7771318178134cc/public/images/information-systems/HOBBYR%20ERD%20(1).png" width="900" height="auto">
